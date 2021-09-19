@@ -1,0 +1,896 @@
+body{
+	background-image: linear-gradient( to top left,blue,cyan);
+
+}
+header{
+	margin: 40px 70px 200px 70px;
+	height: 130px;
+	width: 90%;
+}
+.header-section{
+	display: flex;
+}
+.header-section #music-img i{
+	background-color: lightgrey;
+	color: green;
+	border-radius: 50%;
+	font-size: 50px;
+	padding: 20px;
+	margin: 10px;
+}
+.header-section #music-img span{
+	font-size: 1.3rem;
+	font-family: serif;
+}
+.header-section #music-img p{
+	margin: -1.8rem 0px 0px 7rem;
+	line-height: 1rem;
+	font-family: monospace;
+	font-weight: lighter;
+	font-size: 2rem;
+}
+.search{
+	position: relative;
+	height: 40px;
+	width:  22%;
+	margin: 4.6rem 0px 0px 20rem;
+	border-radius: 10px; 
+	background-color: lightgrey;
+	display: flex;
+	box-sizing: border-box;
+}
+.search i,.search input{
+	color: black;
+	font-size: 1rem;
+	margin: 7px 0px 0px 10px;
+}
+.search input{
+	width: 75%;
+}
+#s-icon>i:hover{
+	cursor: pointer;
+	color: green;
+}
+.header-myimg{
+	display: flex;
+	align-items: flex-end;
+	margin: 0rem 0px 0px 35%;
+	position: relative;
+}
+.header-myimg img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+
+}
+.myimg-dropdown{
+	width: 100px;
+	height: auto;
+	display: none;
+	background-color: lightgrey;
+	position: absolute;
+	top: 20%;
+	margin: 0px 0px 0px -7rem;
+}
+.myimg-dropdown a{
+
+	color: green;
+	text-decoration: none;
+
+}
+ 
+.header-myimg:hover  .myimg-dropdown{
+	display: flex;
+	flex-direction: column;
+
+}
+/* music- images */
+.music-images{
+	width: 70%;
+	height: 300px;
+	margin-left:70px;
+	margin-top: -12rem;
+	display: flex;
+	padding-left: 0px;
+	padding-right: 0px;
+
+}
+.music-images img{
+	width: 400px;
+	height: 250px;
+}
+.img1{
+	margin: auto;
+}
+.img2 img{
+	height: 260px;
+}
+.img2{
+	margin:  auto -9rem  auto -9rem;
+	box-shadow: 0px 0px 8px 0px grey;
+	box-sizing: border-box;
+	z-index: 2;
+
+}
+.img3{
+	margin: auto;
+}
+@media screen and (max-width: 768px){
+	.music-images{
+		display: flex;
+		width: 90%;
+		height: 120px;
+		position: relative;
+		margin-left:2rem;
+	}
+	.music-images img{
+	width:  auto;
+	height:110px;
+	}
+	.music-images .img2{
+		z-index: 1;
+	}
+} 
+
+
+/*aside class */
+aside,.similar-artists{
+	width: 25%;
+	height:  449px;
+	float: right;
+	margin-top: -30%;
+	vertical-align: top;
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	position: relative;
+	/*overflow-x: hidden;
+	overflow-y: hidden;*/
+}
+.similar-artists{
+	height:  auto;
+	margin-top: -56%;
+	float: right;
+	overflow: hidden;
+}
+aside h2{
+	text-align: left;
+	margin-left: 5px;
+	display: flex;
+	justify-content: start;
+}
+/*ASIDE-QUEUE */
+.queue h4{
+	display: flex;
+	justify-content: end;
+	margin-top: -3rem;
+	margin-right:1rem ;
+}
+.queue-list{
+	width: 70px;
+	height: auto;
+	display: none;
+	background-color: lightgrey;
+	margin-left:18rem;
+}
+.queue-list a{
+
+	color: green;
+	text-decoration: none;
+
+}
+.queue :hover{
+	 
+	color: red;
+}
+.queue:hover .queue-list{
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+/*ASIDE-SONGS-LIST */
+.songs-container{
+	display: flex;
+	flex-direction: column;
+}
+.songs-list{
+	width: 98%;
+	height: 80px;
+	margin: 0px 0px;
+	display: flex;
+}
+#song-number,.song-img,.song-singer,.song-duration{
+	width: 6%;
+	height: 80px;
+	margin: auto;
+}
+#song-number p{
+	margin: 1rem 0px 0px 0.5rem;
+}
+#song-number i{
+	display: none;
+}
+.song-img{
+	width: 18%;
+}
+.song-img img{
+	width: 60px;
+	height: 73px;
+}
+.song-singer{
+	width: 55%;
+}
+.song-singer p{
+	margin-top: -1rem;
+}
+.song-duration{
+	width: 10%;
+
+}
+.song-duration span{
+	 text-align: center;
+
+}
+
+/* index.html aside */
+#aside{
+	margin-top: -149%;
+}
+.songs-list:hover{
+	background-color: lightgrey;
+}
+
+
+/*Telugu New Releases*/
+.releases{
+	display: flex;
+	width: 60%;
+	height:  250px;
+	position: relative;
+	margin:10px 0px 0px 70px ;
+}
+.releases img{
+	width: 100px;
+	height: 100px;
+	justify-content: center;
+}
+
+.telugu-img1,.hindi-img1{
+	 display: flex;
+	 justify-content: start;
+	 margin-top: 5rem;
+	 margin-left: -3rem;
+	 
+}
+.telugu-img2,.hindi-img2{
+	display: flex;
+	justify-content:end;
+	margin-top: 5rem;
+	margin-left: 15rem;
+}
+.new-releases-dropdown h4,p{
+	margin-left: 1rem;
+}
+.new-releases-dropdown p{
+	margin-top: -1rem;
+}
+.releases-list{
+	width: 100px;
+	height: auto;
+	display: none;
+	background-color: lightgrey;
+	margin-left:2rem;
+}
+.releases-list a{
+
+	color: green;
+	text-decoration: none;
+
+}
+
+.new-releases-dropdown :hover{
+	cursor: pointer;
+	color: green;
+}
+.new-releases-dropdown:hover .releases-list{
+	display: flex;
+	flex-direction: column;
+} 
+ 
+/* artists */
+.artist-heading{
+	height: 20px;
+	width: 70%;
+	margin: 0px 0px 0px 72px;
+}
+
+.artists-list{
+	display: flex;
+	margin:10px 0px 0px 70px ;
+	width: 80%;
+	height:  260px;
+	box-sizing: border-box;
+
+}
+.artists-list img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	text-align: center;
+	margin-left: -10px;
+
+}
+.artists-list figcaption{
+	text-align: center;
+	color: white;
+}
+.artists{
+	width: 200px;
+	height: 250px;
+	margin: auto;
+}
+
+/*Radio , Latest Telugu Releases & Latest Hindi Releases*/
+.radio-list,.latest-telugu-releases,.latest-hindi-releases{
+	width: 80%;
+	height:  auto;
+	position: relative;
+	margin:10px 0px 0px 70px ;
+}
+.radio-list{
+	display: flex;
+}
+.radio-list2{
+	display: none;
+}
+.radio-heading,.latest-telugu-releases-heading,.latest-hindi-releases-heading{
+	margin:3px 0px 5px 0px;
+}
+.radio-heading{
+	margin-left:70px ;
+}
+.latest-telugu-releases-list,.latest-hindi-releases-list{
+	display: flex;
+	margin:10px 0px 0px 0px ;
+}
+.radio-name,.movie-name{
+	width: 200px;
+	height: auto;
+	margin: auto;
+	margin-bottom: 5px;
+}
+.radio-name img,.movie-name img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	text-align: center;
+	margin-left: -10px;
+
+}
+.movie-name img{
+	border-radius: 0%;
+}
+.radio-name figcaption,.movie-name figcaption{
+	text-align: center;
+	color: white;
+}
+ 
+/* moods-container */
+.moods-container{
+	width: 70%;
+	height:  auto;
+	position: relative;
+	margin:10px 0px 0px 70px ;
+	display: flex;
+}
+.moods{
+	width: 25%;
+	height: auto;
+	margin: 5px 5px;
+
+
+}
+.moods img{
+	width: 90%;
+	height: 150px;
+	padding: 30px 20px;
+	margin-left:3px;
+
+}
+.moods h3{
+	text-align: center;
+	margin: -7.3rem 0px 7rem 0px;
+}
+
+footer{
+	width: 100%;
+	height: auto;
+	background-color: lightgrey;
+	display: flex;
+	flex-direction: row;
+}
+.footer-img{
+	height: 75px;
+	width: 75px;
+	margin:0px 0px 0px 30px ;
+}
+
+.footer-img img{
+	height: 70px;
+	width: 70px;
+
+}
+.footer-artist-icon{
+	height: 10px;
+	width: 10px;
+}
+.footer-artist-icon i{
+	margin: 15px 0px 0px 10px;
+}
+.footer-range{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	height: 60px;
+	text-align: center;
+	margin: 10px 0px 0px 20%;
+}
+.forward-backward-icons{
+	margin: 6px 0px;
+}
+.forward-backward-icons i{
+	color: black;
+	font-size: 1rem;
+	margin-left: 1.2rem;
+}
+.rangee input{
+	width: 60%;
+	margin-top: 7px;
+	cursor: pointer;
+}
+.rangee #duration{
+	margin: -2rem 5px 5px 5px;
+
+}
+.right-icons{
+	 width: 40%;
+	 height: 40px;
+	 float: right;
+	 margin: -3rem 0px 0px 120%;
+}
+.right-icons span{
+	 display: flex;
+}
+.right-icons span i{
+	font-size: 1.2rem;
+	color: green;
+	margin: 5px 10px 0px 0px;
+} 
+.right-icons span input{
+	 width: 50%;
+	 cursor: pointer;
+}
+.fbm{
+	display: none;
+}
+@media screen and (max-width: 768px){
+	 
+	.releases{
+	width: 100%;
+	height:  200px;
+	margin:10px 0px 0px 0px ;
+
+	}
+	.releases img{
+		width: 75px;
+		height: 75px;
+	}
+
+	.telugu-img1,.hindi-img1{
+		 display: flex;
+		 margin-top: 6rem;
+		 margin-left: 0rem;
+		 
+	}
+	.telugu-img2,.hindi-img2{
+		display: flex;
+		justify-content:end;
+		margin-top: 5rem;
+		margin-left: 0rem;
+	}
+	.new-releases-dropdown h4,p{
+		margin-left: 0rem;
+	}
+	.new-releases-dropdown p{
+		margin-top: -1rem;
+	}
+	.releases-list{
+		width: 100px;
+		height: auto;
+		display: none;
+		background-color: lightgrey;
+		margin-left:2rem;
+	}
+	.releases-list a{
+
+		color: green;
+		text-decoration: none;
+
+	}
+
+	.new-releases-dropdown :hover{
+		cursor: pointer;
+		color: green;
+	}
+	.new-releases-dropdown:hover .releases-list{
+		display: flex;
+		flex-direction: column;
+	} 
+	.telugu-img1 ,.hindi-img1 {
+		margin: 3rem 0px 0px -10rem;
+	}
+	.telugu-img2 ,.hindi-img2 {
+		margin: 3rem 0rem 0px 15rem;
+	}
+	.radio-list,.artists-list,.moods-container{
+		display: flex;
+		width: 90%;
+		height: 140px;
+		position: relative;
+		margin-left:2rem;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	.radio-name,.artists,.moods{
+		width:  150px;
+		height:  150px;
+		margin: auto;
+	}
+	.radio-list img,.artists-list img{
+		width: 75px;
+		height: 75px; 
+	}
+	.moods img{
+		width: 125px;
+		height: 78px;
+		margin: auto;
+	}
+	.moods h3{
+		margin: -5.3rem 0px 7rem 0px;
+		color: white;
+	}
+
+	.latest-telugu-releases-list,.latest-hindi-releases-list{
+		display: flex;
+		width:  auto;
+		height:  200px;
+		position: relative;
+		margin-left:-2.4rem;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	.movie-name{
+		width:  150px;
+		height:  150px;
+		margin: auto;
+	}
+	.movie-name img ,.footer-img img{
+		width: 75px;
+		height: 75px; 
+	}
+	.footer-img{
+		margin-left: 0px;
+	}
+	
+	.footer-range,.footer-artist-icon{
+		display: none;
+	}
+	.footer-artist #p{
+		margin-top: -10px;
+	}
+	.footer-artist p{
+		margin-left: 5px;
+	}
+	.fbm{
+		display: flex;
+		margin: 30px 0px 0px  10rem;
+	}
+	.fbm i{
+		color: black;
+		font-size: 1.2rem;
+		margin:0px 4px 0px 0px;
+		cursor: pointer;
+	}
+	#aside{
+		width: 95%;
+		height: 400px;
+		margin: 0px 0px 0px 0rem;
+	} 
+	.queue{
+		display: none;
+	}
+
+	.telugu-img1,.hindi-img1{
+	 display: flex;
+	 justify-content: start;
+	 margin-top: 5rem;
+	 margin-left: -8rem;
+	
+	}
+	.telugu-img2,.hindi-img2{
+		display: flex;
+		justify-content:end;
+		margin-top: 5rem;
+		margin-left: 5rem;
+	}
+	.new-releases-dropdown h4,p{
+		margin-left: 1rem;
+	}
+	.new-releases-dropdown p{
+		margin-top: -1rem;
+	}
+}
+ /* CSS for Single Play List Screen */
+ .spc-artist{
+ 	width: 70%;
+ 	height: 350px;
+ 	margin-left:70px;
+	margin-top: -12rem;
+ }
+.artist-img{
+ 	width: 35%;
+ 	height: 350px;
+ }
+ .artist-img img{
+ 	width:  100%;
+ 	height: 100%;
+ }
+ .artist-img h2{
+ 	display: none;
+ }
+ .artist-info-section{
+ 	display: flex;
+ 	flex-direction: column;
+ 	margin: -20rem 0px 0px  38%;
+ }
+ .artist-info{
+ 	width: 95%;
+ 	height: 100px;
+ }
+ .artist-info h5{
+ 	margin: -3rem 0px 0px 84%;
+ }
+.play-all{
+	 margin: 3rem 0px 10px 30px;
+	 display: flex;
+}
+.p-l-s{
+	margin-right: 23px;
+}
+.p-l-s a{
+	text-decoration: none;
+}
+.p-l-s:hover{
+	box-shadow: 0px 0px 6px 4px grey;
+	cursor: pointer;
+}
+.fab,.fas:hover{
+	border-radius: 50%;
+}
+.a{
+	width: 5rem;
+	height: 20px;
+	border-radius: 25px;
+	padding: 5px 9px;
+	text-align: center;
+	color: black;
+}
+
+.fab,.fas{
+ 	position: relative;
+ 	font-size: 1.8rem;
+ 	color: red;
+ 	margin-top: 0px;
+}
+.tracks-list ul{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 3rem 0px 0px -5rem;
+}
+
+
+
+/* Artists Songs */
+.artist-songs{
+	width: 70%;
+	height: auto;
+	margin:5px 0px 0px 70px;
+}
+.artist-playlist{
+	display: flex;
+}
+
+.song-number-heading,.titlee-heading,.album-heading,.Date-Added-heading,.Duration-heading{
+	width: 20px;
+	height: 20px;
+	margin: auto;
+}
+.song-number{
+	width: 20px;
+}
+.song-number p{
+	margin: 1rem 0px 0px 0.5rem;
+}
+.titlee-heading,.titlee{
+	width: 45%;
+}
+.album-heading,.album{
+	width: 18%;
+}
+.Date-Added-heading,.Date-Added{
+	width: 13%;
+}
+.Duration-heading,.Duration{
+	width: 10%;
+}
+.artist-playlist-songs{
+	height: auto;
+	width: auto;
+	display: flex;
+}
+.artist-playlist h3{
+	margin: auto;
+	text-align: center;
+}
+.song-number,.titlee,.album,.Date-Added,.Duration{
+	height: 66px;
+	margin: auto;
+}
+.titlee{
+	display: flex;
+}
+.titlee img{
+	height: 65px;
+	width: 65px;
+}
+.titlee p{
+	margin-left: 20px;
+}
+.album,.Date-Added,.Duration{
+	text-align: center;
+}
+.show-more{
+	width: 100px;
+	height: 20px;
+	margin: 10px 0px 10px 10px;
+	border-radius: 10px;
+}
+.show-more a{
+	text-decoration: none;
+	margin-left: 10px;
+}
+.song-number i,.fas fa-play i{
+	font-size: 1rem;
+	color: darkgreen;
+	display: none;
+}
+.artist-playlist-songs:hover{
+	background-color: lightgrey;
+	
+}
+
+.artist-playlist-songs:hover .song-number p{
+	display: none;
+}
+.artist-playlist-songs:hover .song-number i{
+	display: flex;
+	margin: 1rem 0px 0px 0.7rem;
+}
+.songs-list:hover #song-number p{
+	display: none;
+}
+.songs-list:hover #song-number i{
+	display: flex;
+	font-size: 1rem;
+	margin: 1rem 0px 0px 0.7rem;
+	color: darkgreen;
+}
+@media screen and (max-width: 768px){
+	.header-section{
+		width: auto;
+		margin-left: -20vw;
+		width: 100%;
+	}
+	#music-img span,#music-img p{
+		 display: none;
+	}
+	.search{
+		margin: 5rem 0px 0px 0rem;
+		width:  100%;
+		display: flex;
+	}
+	.search input{
+		width: 50%;
+	}
+	.header-myimg{
+		margin-left: 5rem;
+	}
+	.spc-artist{
+	 	width: 100%;
+	 	height: 200px;
+		margin-top: -12rem;
+		margin-left: 0px;
+	 }
+	.artist-img{
+	 	width: 40%;
+	 	height: 200px;
+
+	 }
+	 .artist-img img{
+	 	width:  100%;
+	 	height: 95%;
+	 	border-radius: 50%;
+	 }
+	 .artist-img h2{
+	 	display: none;
+	 }
+	 
+	 .artist-info-section{
+	 	display: flex;
+	 	flex-direction: column;
+	 	margin: -12rem 0px 0px  11rem;
+	 }
+	 .artist-info{
+	 	width: 90%;
+	 	height: 80px;
+	 }
+	 .artist-info h5{
+	 	display: none;
+	 }
+	 .artist-info h4{
+	 	margin: -1rem 0px 0px 0%;
+	 }
+	.play-all{
+		 margin: 0.5rem 0px 10px 30px;
+		 display: flex;
+	}
+	#podocast{
+		display: none;
+	}
+	.tracks-list ul{
+		margin: 0rem 0px 0px -3rem;
+	}
+	.tracks-list li{
+		margin-left: 18px;
+	}
+	
+	.artist-songs{
+		width: 100%;
+		margin: 10px 0px 0px -1rem;
+	}
+	.similar-artists,#songs-container{
+		display: none;
+	}
+	.artist-playlist{
+		height:auto ;
+	}
+	.Date-Added-heading,.Date-Added{
+		display: none;
+	}
+	.song-number-heading,.titlee-heading,.album-heading,.Duration-heading{
+		height: 40px;
+	}
+	.song-number-heading h3,.titlee-heading h3,.album-heading h3,.Duration-heading h3{
+		font-size: 1rem;
+	}
+	.titlee,.album,.album-heading,.titlee-heading,.Duration,.Duration-heading{
+		margin-left: 0px;
+	}
+	.album,.album-heading{
+		width: 30%;
+	}
+	.Duration p{
+		margin-left: 0px;
+	}
+}
